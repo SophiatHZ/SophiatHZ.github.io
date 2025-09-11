@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!--header section code-->
+<header class="header">
+  <a href="/index.html" class="navbar">
+    <img src="/assets/logoHZ.png" alt="logo" />
+  </a>
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">Profile</a>
+    <a href="/dashboard.html">Dashboard</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/blog/blog.html">Blog</a>
+  </nav>
+</header>
+
+<body>
+  <section class="faq">
+    <div class="wrapper">
+
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          How can you print a document from your laptop at HZ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>To print from your own laptop</p>
+          <ol>
+            <li>Log in at my hz</li>
+            <li>Edit the personal menu</li>
+            <li>Add the self service portal</li>
+            <li>Go to the self service portal</li>
+            <li> Click reserve </li>
+          </ol>
+
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can you scan a document and send it to your laptop at HZ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <ol>
+            <li>Make sure you have a sufficient amount of money on your HZ card. </li>
+            <li>Register using your HZ pass on the RFID reader next to the printer.</li>
+            <li>In the printer menu, select option Scan.</li>
+            <li> Place the original sheet on the feeder or glass plate.</li>
+            <li> Press send to me. </li>
+            <li> Press Yes. </li>
+            <li> Press the Start button. </li>
+            <li> Press the green Start button on the printer to scan page by page. Once this is ready, press Start
+              Sending.
+            </li>
+            <li>log out</li>
+
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I buy something on the HZ webshop?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <ol>
+            <li>log in on my hz</li>
+            <li>click on webshop on your personal menu</li>
+            <li>clink on the item </li>
+            <li>go to shopping cart</li>
+            <li>press pay</li>
+            <li>select a payment method</li>
+            <li>pay</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can you book a project space?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>To book a project space</p>
+          <ol>
+            <li>Log in at my hz</li>
+            <li>Edit the personal menu</li>
+            <li>Add the self sevice portal</li>
+            <li> Go to the self service portal</li>
+            <li> Click reserve </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What are the instructions if you want to park your car at the HZ parkinglot?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <P>If you have a HZ student pass you can park your car at the following address: Poelendaelesingel, 4335 JA
+            Middelburg. You can enter the parking lot by scanning your HZ student pass at the entrance.</P>
+        </div>
+      </div>
+
+    </div> <!-- end of last .faq -->
+  </section>
+
+
+
+  <!-- Scripts -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <div class="footer">
+    <footer></footer>
+  </div>
+
+</body>
+
+</html>
+
+
+
+<body>
+  <!----menu bar script------------>
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+    menuIcon.onclick = () => {
+      navbar.classList.toggle('active');
+    };
+  </script>
+
+
+  <div class="footer">
+    <footer></footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header section code-->
+    <header class="header">
+        <a href="/index.html" class="navbar">
+            <img src="/assets/logoHZ.png" alt="logo" />
+        </a>
+        <div class="social-media">
+            <a href="https://github.com/SophiatHZ" target="_blank" <i class='bx bxl-github'></i></a>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">Profile</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/blog/blog.html">Blog</a>
+        </nav>
+
+    </header>
+
+    <!-- About section code -->
+    <section class="About" id="About">
+        <div class="content">
+            <div class="About-title"><span>About me</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon">
+
+                    </div>
+                    <div class="topic">About me</div>
+                    <p> Hi, I’m Sophia, I’m 18 years old and I live in Burgh-Haamstede, a quiet town close to the beach.
+                        I’m studying HBO-ICT at HZ University of Applied Sciences in Middelburg. I’ve been into
+                        computers for as long as I can remember. When I was younger, I spent hours playing games,
+                        changing parts in my laptop or PC, and just messing around to see what would happen. I didn’t
+                        always know what I was doing, but I loved figuring things out. As I got older, I started
+                        wondering more about how computers actually work and what’s going on “behind the scenes” when
+                        you run a program. That curiosity is what made me want to learn programming, and now I get to
+                        study it for real.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+
+
+                    </div>
+                    <div class="topic">Hobbies</div>
+                    <p>When I’m not busy with school, I like doing a lot of different things. I listen to music
+                        pretty much every day sometimes just in the background, sometimes really paying attention to
+                        every little detail in a song. Gaming is one of my favorite ways to relax, and I especially like
+                        when a game has a beautiful, meaningful story that really sticks with you. I love thrifting
+                        because it feels like a treasure hunt you never know what cool or weird stuff you’re going to
+                        find. Baking and cooking are also things I really enjoy, especially when I’m trying out a new
+                        recipe. Sometimes it goes perfectly, sometimes not… but it’s always fun. And of course, I watch
+                        a lot of movies.
+                    </p>
+                </div>
+                <div class="box">
+
+
+                    <img src="assets/Image - Copy.jpg" alt="">
+
+                </div>
+
+                <div class="box">
+                    <div class="topic">Characteristics of Me</div>
+                    <ul>
+                        <li>Introvert</li>
+                        <li>Kind</li>
+                        <li>Curious</li>
+                        <li>Creative</li>
+
+                        <li>Adventurous </li>
+                        <li>Caring</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!----menu bar script------------>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+        menuIcon.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+    </script>
+
+
+
+</body>
+
+</html>

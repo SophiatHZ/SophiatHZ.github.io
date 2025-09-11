@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html" class="navbar">
+            <img src="/assets/logoHZ.png" alt="logo" />
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">Profile</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/blog/blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <div class="blog-back-button">
+        <button onclick="history.back()">Back</button>
+    </div>
+
+    <div class="blogbox-container2">
+        <div class="bloxbox-title"><span>ICT field of work</span></div>
+        <div class="blog-card2">
+            <h2>I don't know</h2>
+            <p> Still thinking
+            </p>
+        </div>
+
+
+
+
+
+        <!----menu bar script------------>
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.querySelector('.navbar');
+            menuIcon.onclick = () => {
+                navbar.classList.toggle('active');
+            };
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <footer></footer>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html" class="navbar">
+            <img src="/assets/logoHZ.png" alt="logo" />
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">Profile</a>
+            <a href="/dashboard.html">Dashboard</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/blog/blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <div class="blog-back-button">
+        <button onclick="history.back()">Back</button>
+    </div>
+
+    <div class="blogbox-container2">
+        <div class="bloxbox-title"><span>Programming experience</span></div>
+        <div class="blog-card2">
+            <h2>Programming experience</h2>
+            <p>I don’t have a lot of programming experience yet, but I’ve always loved messing around with computers. As
+                a kid, I spent hours playing games, swapping parts in my laptop or PC, and just trying to figure out how
+                everything worked. That curiosity made me really interested in programming. Now that I’m studying
+                HBO-ICT, I’m going to learn the basics of coding and how programs are actually built. I’m still pretty
+                new to it, but I really enjoy it and I’m excited to make my own projects and maybe even games someday.
+            </p>
+        </div>
+
+
+
+
+
+
+
+        <!----menu bar script------------>
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.querySelector('.navbar');
+            menuIcon.onclick = () => {
+                navbar.classList.toggle('active');
+            };
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <footer></footer>
+        </div>
+</body>
+
+</html>
